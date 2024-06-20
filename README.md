@@ -1,2 +1,1 @@
-# otrpg
-Open Table RPG
+# Open Table RPG
