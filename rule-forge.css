@@ -1,0 +1,1193 @@
+/* CSS STYLE */
+
+.corner-trim {
+	--size: 1.5mm;
+	--mask: radial-gradient(var(--size) at var(--size) var(--size),#0000 98%,#000) calc(-1 * var(--size)) calc(-1 * var(--size));
+	-webkit-mask: var(--mask);
+			mask: var(--mask);
+}
+
+/* FONTS */
+
+/* Deja-Vu Sans */
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSans.ttf);
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSans-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSans-Oblique.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSans-BoldOblique.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSansCondensed.ttf);
+	font-stretch: condensed;
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSansCondensed-Bold.ttf);
+	font-weight: bold;
+	font-stretch: condensed;
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSansCondensed-Oblique.ttf);
+	font-style: italic;
+	font-stretch: condensed;
+}
+
+@font-face {
+	font-family: dejavu-sans;
+	src: url(./fonts/dejavu/DejaVuSansCondensed-BoldOblique.ttf);
+	font-weight: bold;
+	font-style: italic;
+	font-stretch: condensed;
+}
+
+/* Averia */
+
+@font-face {
+	font-family: averia;
+	src: url(./fonts/averia/Averia.ttf);
+}
+
+@font-face {
+	font-family: averia;
+	src: url(./fonts/averia/Averia-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: averia;
+	src: url(./fonts/averia/Averia-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia;
+	src: url(./fonts/averia/Averia-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Averia Libre */
+
+@font-face {
+	font-family: averia-libre;
+	src: url(./fonts/averia/AveriaLibre.ttf);
+}
+
+@font-face {
+	font-family: averia-libre;
+	src: url(./fonts/averia/AveriaLibre-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: averia-libre;
+	src: url(./fonts/averia/AveriaLibre-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-libre;
+	src: url(./fonts/averia/AveriaLibre-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-libre;
+	src: url(./fonts/averia/AveriaLibre-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: averia-libre;
+	src: url(./fonts/averia/AveriaLibre-LightItalic.ttf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/* Averia Sans */
+
+@font-face {
+	font-family: averia-sans;
+	src: url(./fonts/averia/AveriaSans.ttf);
+}
+
+@font-face {
+	font-family: averia-sans;
+	src: url(./fonts/averia/AveriaSans-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: averia-sans;
+	src: url(./fonts/averia/AveriaSans-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-sans;
+	src: url(./fonts/averia/AveriaSans-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-sans;
+	src: url(./fonts/averia/AveriaSans-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: averia-sans;
+	src: url(./fonts/averia/AveriaSans-LightItalic.ttf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/* Averia Sans Libre */
+
+@font-face {
+	font-family: averia-sans-libre;
+	src: url(./fonts/averia/AveriaSansLibre.ttf);
+}
+
+@font-face {
+	font-family: averia-sans-libre;
+	src: url(./fonts/averia/AveriaSansLibre-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: averia-sans-libre;
+	src: url(./fonts/averia/AveriaSansLibre-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-sans-libre;
+	src: url(./fonts/averia/AveriaSansLibre-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-sans-libre;
+	src: url(./fonts/averia/AveriaSansLibre-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: averia-sans-libre;
+	src: url(./fonts/averia/AveriaSansLibre-LightItalic.ttf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/* Averia Serif */
+
+@font-face {
+	font-family: averia-serif;
+	src: url(./fonts/averia/AveriaSerif.ttf);
+}
+
+@font-face {
+	font-family: averia-serif;
+	src: url(./fonts/averia/AveriaSerif-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: averia-serif;
+	src: url(./fonts/averia/AveriaSerif-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-serif;
+	src: url(./fonts/averia/AveriaSerif-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-serif;
+	src: url(./fonts/averia/AveriaSerif-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: averia-serif;
+	src: url(./fonts/averia/AveriaSerif-LightItalic.ttf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/* Averia Serif Libre */
+
+@font-face {
+	font-family: averia-serif-libre;
+	src: url(./fonts/averia/AveriaSerifLibre.ttf);
+}
+
+@font-face {
+	font-family: averia-serif-libre;
+	src: url(./fonts/averia/AveriaSerifLibre-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: averia-serif-libre;
+	src: url(./fonts/averia/AveriaSerifLibre-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-serif-libre;
+	src: url(./fonts/averia/AveriaSerifLibre-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: averia-serif-libre;
+	src: url(./fonts/averia/AveriaSerifLibre-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: averia-serif-libre;
+	src: url(./fonts/averia/AveriaSerifLibre-LightItalic.ttf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+/* Averia Gruesa (Libre) */
+
+@font-face {
+	font-family: averia-gruesa;
+	src: url(./fonts/averia/AveriaGruesa.ttf);
+}
+
+@font-face {
+	font-family: averia-gruesa-libre;
+	src: url(./fonts/averia/AveriaGruesaLibre.ttf);
+}
+
+/* COLORS */
+
+:root {
+	/* Constants */
+	--white: rgb(255, 255, 255);
+	--white-dark: rgb(232, 233, 234);
+	--grey-light: rgb(194, 190, 191);
+	--grey: rgb(126, 129, 131);
+	--grey-dark: rgb(101, 98, 99);
+	--black-light: rgb(50, 47, 48);
+	--black: rgb(35, 31, 32);
+
+	--red-light: hsl(358, 52%, 69%);
+	--red: hsl(358, 63%, 58%);
+	--red-dark: hsl(358, 39%, 36%);
+
+	--orange-light: hsl(18, 52%, 69%);
+	--orange: hsl(18, 63%, 58%);
+	--orange-dark: hsl(18, 39%, 36%);
+
+	--yellow-light: hsl(38, 52%, 69%);
+	--yellow: hsl(38, 63%, 58%);
+	--yellow-dark: hsl(38, 39%, 36%);
+
+	--green-light: hsl(108, 52%, 69%);
+	--green: hsl(108, 63%, 58%);
+	--green-dark: hsl(108, 39%, 36%);
+
+	--blue-light: hsl(208, 52%, 69%);
+	--blue: hsl(208, 63%, 58%);
+	--blue-dark: hsl(208, 39%, 36%);
+
+	--purple-light: hsl(268, 52%, 69%);
+	--purple: hsl(268, 63%, 58%);
+	--purple-dark: hsl(268, 39%, 36%);
+
+	/* Theme */
+	--text-color-dark: var(--black-light);
+	--text-color: var(--grey-dark);
+	--text-color-light: var(--grey-light);
+
+	/* UI */
+	--ui-background-color-dark: rgb(55, 55, 60);
+	--ui-background-color: rgb(85, 85, 90);
+	--ui-background-color-light: rgb(125, 125, 135);
+	--ui-background-color-lighter: rgb(190, 190, 200);
+	--ui-page-border-color: var(--ui-background-color-light);
+}
+
+/* MEASUREMENTS */
+
+:root {
+	/* Text Sizes */
+	--font-size-8: 48pt;
+	--font-size-7: 32pt;
+	--font-size-6: 24pt;
+	--font-size-5: 18pt;
+	--font-size-4: 16pt;
+	--font-size-3: 14pt;
+	--font-size-2: 11pt;
+	--font-size-1: 9pt;
+	--font-size-0: 7pt;
+
+	font-size: var(--font-size-1);
+
+	/* Paper Sizes */
+	--page-width-letter: 8.5in;
+	--page-height-letter: 11in;
+	--page-width-a4: 210mm;
+	--page-height-a4: 297mm;
+
+	/* Paper Formatting */
+	--page-margin: 0.5in;
+	--column-gap: 1cm;
+
+	/* Lines & Corners */
+	--border-width-thin: 0.25mm;
+	--border-width: 0.5mm;
+	--border-width-thick: 1mm;
+
+	--corner-radius: 0.375mm;
+	--corner-radius-large: 1mm;
+	--corner-radius-huge: 1.5mm;
+
+	/* UI */
+	--ui-page-spacing: 32px;
+	--ui-page-border-width: 2px;
+	--ui-font: dejavu-sans;
+}
+
+/* GLOBALS */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	color: inherit;
+	font: inherit;
+}
+
+html,
+body {
+	text-align: center;
+	font-size: var(--font-size-1);
+	font-family: averia-sans;
+	color: var(--text-color);
+	background-color: var(--white);
+}
+
+@media only screen {
+
+	html,
+	body {
+		background-color: var(--ui-background-color);
+	}
+}
+
+/* UI */
+
+#ui {
+	font-size: var(--font-size-2);
+	font-family: var(--ui-font);
+	color: var(--white-dark);
+	display: block;
+	width: 100%;
+	height: 4.5rem;
+}
+
+html {
+	scroll-padding-top: 5rem; /* Offset UI bar when targeting IDs in the URL. */
+}
+
+@media only print {
+	#ui {
+		display: none;
+	}
+}
+
+#ui>div {
+	position: fixed;
+	width: 100%;
+	text-align: left;
+	padding: 0.5rem;
+	background-color: var(--ui-background-color);
+	border-bottom: var(--border-width) solid var(--ui-background-color-light);
+	box-shadow: rgba(0, 0, 0, 0.5) 0 0 1rem;
+}
+
+#ui button,
+#ui textarea,
+#ui #logo {
+	margin: 0.25rem;
+	padding: 0.5rem;
+	border-radius: var(--corner-radius-huge);
+	border: var(--border-width) solid var(--ui-background-color-light);
+	color: var(--ui-background-color-dark);
+	background-color: var(--ui-background-color-lighter);
+}
+
+#ui #logo {
+	font-weight: bold;
+	color: var(--white-dark);
+	background-color: transparent;
+	cursor: default;
+}
+
+#ui button:hover,
+#ui button:focus {
+	background-color: var(--white-dark);
+}
+
+#ui button:active {
+	background-color: var(--white);
+}
+
+#ui textarea {
+	background-color: var(--white);
+	resize: none;
+}
+
+#ui #edit-button.active {
+	color: var(--white-dark);
+	background-color: var(--ui-background-color-dark);
+}
+
+#ui #title-editor {
+	width: 16em;
+}
+
+/* PAGES */
+
+.pages,
+.pages * {
+	/* Force exact colors when printing pages */
+	print-color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+	-moz-print-color-adjust: exact;
+	-ms-print-color-adjust: exact;
+	-o-print-color-adjust: exact;
+}
+
+.pages {
+	font-family: averia-libre;
+	display: inline-block;
+	text-align: left;
+}
+
+.page {
+	font-size: var(--font-size-1);
+	color: var(--text-color);
+	background: var(--white) url(https://www.dndbeyond.com/content/1-0-2598-0/skins/waterdeep/images/background_texture.png) repeat;
+	padding: var(--page-margin);
+	width: var(--page-width-letter);
+	height: var(--page-height-letter);
+	box-sizing: border-box;
+	overflow: hidden;
+	text-rendering: optimizeLegibility;
+	page-break-before: always;
+	break-before: always;
+	page-break-after: always;
+	break-after: always;
+	z-index: 100;
+}
+
+@media only print {
+	.page {
+		margin: 0;
+	}
+}
+
+@media only screen {
+	.page {
+		margin: var(--ui-page-spacing);
+		/* width: calc(var(--page-width-letter) + 2 * var(--ui-page-spacing));
+		height: calc(var(--page-height-letter) + 2 * var(--ui-page-spacing));
+		border: var(--ui-page-border-width) solid var(--ui-page-border-color); */
+		box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.5rem;
+	}
+}
+
+/* Page Sizes */
+
+.pages.full .page {
+	width: calc(100% - 2 * var(--ui-page-spacing));
+	height: calc(100% - 2 * var(--ui-page-spacing));
+}
+
+.pages.letter .page {
+	width: var(--page-width-letter);
+	height: var(--page-height-letter);
+}
+
+.pages.a4 .page {
+	width: var(--page-width-a4);
+	height: var(--page-height-a4);
+}
+
+.pages.infinite .page,
+.page.infinite {
+	height: 100%;
+}
+
+/* PAGE BREAKS */
+.page>h1,
+.page>h2,
+.page>h3,
+.page>h4,
+.page>h5,
+.page>h6,
+.page>.title {
+	clear: both;
+	page-break-before: always !important;
+	break-before: always !important;
+}
+
+@media only screen {
+	/* .page>h1::before,
+	.page>.title::before {
+		content: "";
+		border-top: var(--ui-page-border-width) dashed var(--ui-page-border-color);
+		background-color: var(--white);
+		min-width: 10%;
+		max-width: 10vw;
+		position: absolute;
+		transform: translateX(-50%);
+	} */
+}
+
+.page table,
+.page table th,
+.page table tr,
+.page article,
+.page section,
+.page ul,
+.page ol,
+.page ul li,
+.page ol li,
+.page>* {
+	clear: both;
+	page-break-inside: avoid !important;
+	break-inside: avoid !important;
+}
+
+.page p {
+	page-break-inside: avoid !important;
+	break-inside: avoid !important;
+}
+
+.page p {
+	break-after: column;
+}
+
+/* COLUMNS */
+
+.columns-1,
+.columns-2,
+.columns-3,
+.columns-4,
+.columns-5,
+.columns-6,
+.columns-7,
+.columns-8 {
+	column-fill: balance;
+	column-gap: var(--column-gap);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.columns-1 *:first-child,
+.columns-2 *:first-child,
+.columns-3 *:first-child,
+.columns-4 *:first-child,
+.columns-5 *:first-child,
+.columns-6 *:first-child,
+.columns-7 *:first-child,
+.columns-8 *:first-child {
+	margin-top: 0;
+}
+
+.columns-1 *:last-child,
+.columns-2 *:last-child,
+.columns-3 *:last-child,
+.columns-4 *:last-child,
+.columns-5 *:last-child,
+.columns-6 *:last-child,
+.columns-7 *:last-child,
+.columns-8 *:last-child {
+	margin-bottom: 0;
+}
+
+.columns-1 {
+	column-count: 1;
+}
+
+.columns-2 {
+	column-count: 2;
+}
+
+.columns-3 {
+	column-count: 3;
+}
+
+.columns-4 {
+	column-count: 4;
+}
+
+.columns-5 {
+	column-count: 5;
+}
+
+.columns-6 {
+	column-count: 6;
+}
+
+.columns-7 {
+	column-count: 7;
+}
+
+.columns-8 {
+	column-count: 8;
+}
+
+/* SPACING */
+
+/* Vertical margins between blocks */
+p,
+article,
+table,
+hr {
+	margin: 1em 0;
+}
+
+/* Undo vertical margins in certain circumstances */
+article table:first-child,
+article article:first-child,
+hr:first-child {
+	margin-top: 0;
+}
+
+article table:last-child,
+article article:last-child hr:last-child {
+	margin-bottom: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.middle {
+	vertical-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+/* INPUT */
+
+.page input {
+	color: inherit;
+	background-color: transparent;
+	font-family: averia-sans;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 1rem;
+	display: inherit;
+	overflow: auto;
+	height: 1em;
+	width: 100%;
+	resize: none;
+	box-sizing: border-box;
+	border-bottom: var(--border-width) solid var(--grey);
+}
+
+.page p input,
+.page h1 input,
+.page h2 input,
+.page h3 input,
+.page h4 input,
+.page h5 input,
+.page h6 input {
+	display: inline;
+	width: auto;
+	margin: 0;
+}
+
+/* TEXT */
+
+p {
+	font-size: var(--font-size-1);
+}
+
+p.small {
+	font-size: var(--font-size-0);
+}
+
+p.large {
+	font-size: var(--font-size-2);
+}
+
+p b,
+p.bold {
+	color: var(--text-color-darkish);
+	font-weight: bold;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.no-bold {
+	font-weight: normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.no-italic {
+	font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+h1 {
+	font-size: var(--font-size-5);
+}
+
+h2 {
+	font-size: var(--font-size-4);
+}
+
+h3 {
+	font-size: var(--font-size-3);
+}
+
+h4 {
+	font-size: var(--font-size-3);
+}
+
+h5 {
+	font-size: var(--font-size-2);
+}
+
+h6 {
+	font-size: var(--font-size-2);
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	border-radius: var(--corner-radius);
+}
+
+h1,
+h2,
+h3,
+thead {
+	color: transparent;
+	background-color: var(--black);
+	padding: 0.125em 0.5em;
+	margin-bottom: 0.25em;
+	text-transform: uppercase;
+}
+
+h4,
+h5,
+h6 {
+	color: var(--black);
+	text-transform: capitalize;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+h1.title,
+h2.title,
+h1.subtitle,
+h2.subtitle {
+	color: var(--black);
+	background-color: transparent;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+h1.title {
+	font-size: var(--font-size-8);
+	margin: 0;
+}
+
+h1.subtitle,
+h2.subtitle,
+h2.title {
+	font-size: var(--font-size-7);
+	margin: 1rem 0;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+/* TABLE OF CONTENTS */
+
+#table-of-contents ol,
+#table-of-contents ul {
+	list-style: none;
+	--left-pad: 0;
+	--pad: 0;
+}
+#table-of-contents ol ol,
+#table-of-contents ol ul,
+#table-of-contents ul ol,
+#table-of-contents ul ul {
+	--pad: 1em;
+}
+
+/* LINKS */
+
+@media only screen {
+	a,
+	a:visited {
+		color: var(--blue);
+		cursor: pointer;
+	}
+
+	a:hover,
+	a:active {
+		color: var(--blue-dark);
+	}
+}
+
+@media only print {
+	a {
+		text-decoration: none;
+	}
+}
+
+/* LISTS */
+
+ol,
+ul {
+	--pad: 0.5em;
+	/* Padding to left/right of bullets/numbers */
+	--max-digits-fit: 3.5;
+	/* Looks fine up to 3-digit list numbers (999, iii, etc.) */
+	--left-pad: calc(var(--max-digits-fit) * var(--pad));
+	/* Extra padding to ensure numbers greater than 1 digit fit */
+	padding-left: calc(var(--left-pad) + var(--pad));
+	margin: 1rem 0;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+	padding-left: calc(var(--left-pad) + var(--pad));
+	margin: 0;
+}
+
+ol li,
+ul li {
+	padding-left: var(--pad);
+}
+
+/* List Style Types */
+
+ol.none,
+ul.none,
+li.none {
+	list-style-type: none;
+}
+
+ol.bullet,
+ul.bullet,
+li.bullet {
+	list-style-type: disc;
+}
+
+ol.circle,
+ul.circle,
+li.circle {
+	list-style-type: circle;
+}
+
+ol.square,
+ul.square,
+li.square {
+	list-style-type: square;
+}
+
+ol.decimal,
+ul.decimal,
+li.decimal {
+	list-style-type: decimal;
+}
+
+ol.zero-decimal,
+ul.zero-decimal,
+li.zero-decimal {
+	list-style-type: decimal-leading-zero;
+}
+
+/*ol.lower-roman, ul.lower-roman, li.lower-roman {
+	list-style-type: lower-roman;
+}
+ol.upper-roman, ol.upper-roman, li.upper-roman {
+	list-style-type: upper-roman;
+}*/
+ol.lower-alpha,
+ul.lower-alpha,
+li.lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+ol.upper-alpha,
+ol.upper-alpha,
+li.upper-alpha {
+	list-style-type: upper-alpha;
+}
+
+ol.arrow-open,
+ol.arrow-open,
+li.arrow-open {
+	list-style-type: disclosure-open;
+}
+
+ol.arrow-closed,
+ol.arrow-closed,
+li.arrow-closed {
+	list-style-type: disclosure-closed;
+}
+
+/* BLOCKS */
+
+.dim {
+	background-color: var(--white-dark);
+}
+
+article {
+	padding: 1em;
+	color: var(--text-color-dark);
+	border: var(--border-width) solid var(--grey);
+	border-radius: var(--corner-radius-large);
+}
+
+q,
+blockquote {
+	font-style: italic;
+}
+
+q.no-quotes::before,
+q.no-quotes::after {
+	content: "";
+}
+
+blockquote q::before {
+	padding-right: 0.125em;
+}
+
+blockquote q q::before {
+	padding: 0;
+}
+
+blockquote q::after {
+	padding-left: 0.125em;
+}
+
+blockquote q q::after {
+	padding: 0;
+}
+
+blockquote {
+	font-size: var(--font-size-2);
+	color: var(--text-color-dark);
+	font-style: normal;
+	width: fit-content;
+	margin: 1rem 0;
+	border-radius: var(--corner-radius-large);
+}
+
+blockquote.barred,
+article.barred {
+	border: none;
+	border-radius: 0;
+	border-left: var(--border-width-thick) solid var(--grey);
+	padding: 0 1rem;
+}
+
+blockquote.center {
+	margin: auto;
+}
+
+blockquote>q {
+	margin-right: 2rem;
+}
+
+blockquote>cite {
+	margin-left: 2rem;
+}
+
+cite {
+	color: var(--text-color);
+	text-align: right;
+	display: block;
+}
+
+cite::before {
+	content: " – ";
+	text-align: right;
+}
+
+code {
+	display: block;
+	margin-top: 0 1rem;
+}
+
+p code,
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code,
+blockquote code {
+	display: inline;
+	font-family: averia-serif;
+}
+
+/* TABLES */
+
+table {
+	color: var(--text-color-dark);
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+
+table th,
+table td {
+	padding: 0.125em 0.5em;
+	vertical-align: middle;
+	border: var(--border-width) solid var(--grey);
+}
+
+table th {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+table thead th,
+table thead tr {
+	border-color: var(--black);
+	text-transform: uppercase;
+}
+
+table thead tr {
+	text-transform: capitalize;
+}
+
+/* table tbody tr:nth-child(odd) {
+	background-color: var(--white-dark);
+}
+
+table tbody tr:nth-child(even) {
+	background-color: transparent;
+} */
+
+table th:only-child,
+table tr:only-child {
+	column-span: all;
+}
+
+/* LINES */
+
+hr {
+	content: "<hr>";
+	/* font-size: var(--line-thickness); */
+	height: 0;
+	padding: 0;
+	border: var(--border-width) solid;
+	border-color: var(--text-color-light);
+	border-radius: 1em;
+	width: calc(100% - 2 * var(--thickness-size));
+}
+
+hr.thin {
+	border-width: var(--border-width-thin);
+}
+
+hr.thick {
+	border-width: var(--border-width-thick);
+}
+
+/* COLORS */
+
+.red {
+	color: var(--red);
+}
