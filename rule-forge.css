@@ -463,6 +463,10 @@ html {
 	cursor: default;
 }
 
+#ui button {
+	cursor: pointer;
+}
+
 #ui button:hover,
 #ui button:focus {
 	background-color: var(--white-dark);
@@ -832,7 +836,7 @@ h1,
 h2,
 h3,
 thead {
-	color: transparent;
+	color: var(--white);
 	background-color: var(--black);
 	padding: 0.125em 0.5em;
 	margin-bottom: 0.25em;

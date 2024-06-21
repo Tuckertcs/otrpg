@@ -193,7 +193,7 @@ function updateTableOfContents() {
             // If the current level is greater than or equal to the previous level, create a new nested list.
             let nestedList = document.createElement('ol');
 			nestedList.classList.add('toc-item');
-            currentList.lastChild.appendChild(nestedList);
+            currentList.lastChild?.appendChild(nestedList);
             currentList = nestedList;
         } else if (level < currentLevel) {
             // If the current level is less than the previous level, go up the nesting levels.
