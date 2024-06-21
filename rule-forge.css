@@ -423,6 +423,8 @@ body {
 	display: block;
 	width: 100%;
 	height: 4.5rem;
+	display: flex;
+	align-content: center;
 }
 
 html {
@@ -730,7 +732,7 @@ article article:last-child hr:last-child {
 	font-style: italic;
 	font-weight: bold;
 	padding: 0;
-	margin: 0 1rem;
+	margin: 0;
 	display: inherit;
 	overflow: auto;
 	height: 1em;
@@ -738,6 +740,10 @@ article article:last-child hr:last-child {
 	resize: none;
 	box-sizing: border-box;
 	border-bottom: var(--border-width) solid var(--grey);
+}
+
+.page input::placeholder {
+	color: var(--text-color-light);
 }
 
 .page p input,
@@ -749,7 +755,6 @@ article article:last-child hr:last-child {
 .page h6 input {
 	display: inline;
 	width: auto;
-	margin: 0;
 }
 
 /* TEXT */
@@ -786,6 +791,16 @@ p.bold {
 
 .no-italic {
 	font-style: normal;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: smaller;
 }
 
 h1,
