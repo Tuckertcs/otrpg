@@ -105,6 +105,13 @@ function edit(isEditing = true) {
 		editButton.classList.remove('active');
 		// editButton.innerHTML = 'Edit';
 	}
+
+	// Handle includes.
+	if (editing) {
+		replaceAllIncludes();
+	} else {
+		unreplaceAllIncludes();
+	}
 }
 
 /** Toggle between edit and read-only mode. */
@@ -207,4 +214,35 @@ function updateTableOfContents() {
         currentList.appendChild(li);
         currentLevel = level;
     });
+}
+
+/** Render all include spans. */
+function replaceAllIncludes() {
+	console.log('Replacing all includes...');
+	let spans = document.querySelectorAll('span.include');
+	for (let i = 0; i < spans.length; i++) {
+		let span = spans[i];
+		let spanClass = span.getAttribute('class').split('include id-');
+		let id = span.getAttribute('class').split('-')[1];
+		includeOtherElement(span, id);
+	}
+}
+
+/** Un-render all include spans. */
+function unreplaceAllIncludes() {
+	console.log('Unreplacing all includes...');
+	let spans = document.querySelectorAll('span.include');
+	for (let i = 0; i < spans.length; i++) {
+		let span = spans[i];
+		span.innerHTML = '';
+	}
+}
+
+/** Replace this element's contents with a copy of another element by ID. */
+function includeOtherElement(self, otherId) {
+	console.log("Duplicating " + otherId + "...");
+	if (otherId) {
+		let other = document.getElementById(otherId);
+		self.innerHTML = other.outerhtml;
+	}
 }
